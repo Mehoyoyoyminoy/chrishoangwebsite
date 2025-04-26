@@ -1,103 +1,105 @@
 import Image from "next/image";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+  const projects = [
+    {
+      title: "Clinic Database Management System",
+      description: "Full-stack appointment scheduling with Flask and SQL",
+    },
+    {
+      title: "VR Gesture Recognition",
+      description: "AI model to recognize hand gestures from smart glove data",
+    },
+    {
+      title: "Chat Application",
+      description: "Real-time socket programming chat app handling 50+ users",
+    },
+    {
+      title: "Algorithm Analysis",
+      description: "Optimized advanced data structures and algorithms",
+    },
+    {
+      title: "Immersive Reality Research",
+      description: "Exploring VR/AR applications for human-computer interaction",
+    },
+    {
+      title: "Robotic Hand Control System",
+      description: "Smart glove-controlled robotic arm using live gesture detection",
+    },
+  ];
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+  return (
+    <>
+      <Navbar />
+      <div className="pt-24 flex flex-col items-center min-h-screen p-8 sm:p-20 gap-20 font-sans">
+        {/* Profile Section */}
+        <section className="flex flex-col items-center gap-6 text-center" id="about">
           <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            src="/Pusheen.jpg"
+            alt="Chris Hoang profile picture"
+            width={120}
+            height={120}
+            className="rounded-full border-2 border-gray-300 dark:border-gray-700"
+            priority
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+          <h1 className="text-4xl font-bold">Hi, I'm Chris Hoang</h1>
+          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl">
+            I'm a Computer Science senior passionate about building efficient data systems, scalable software, and meaningful tech solutions.
+          </p>
+        </section>
+
+        {/* Academic Projects and Interests */}
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-12 w-full max-w-6xl" id="experiences">
+          {/* Academic Projects */}
+          <div className="flex flex-col items-center md:items-start gap-4">
+            <h2 className="text-2xl font-semibold">Academic Projects</h2>
+            <ul className="text-gray-700 dark:text-gray-300 text-left list-disc pl-5 space-y-2">
+              <li><strong>Clinic Database Management System</strong> – Flask app for scheduling and patient record management.</li>
+              <li><strong>VR Gesture Recognition System</strong> – Smart glove-based real-time gesture AI model.</li>
+              <li><strong>Real-Time Chat App</strong> – Socket programming handling 50+ concurrent users.</li>
+              <li><strong>Algorithm Analysis Project</strong> – Built optimized data structures and sorting algorithms.</li>
+            </ul>
+          </div>
+
+          {/* Interests */}
+          <div className="flex flex-col items-center md:items-start gap-4">
+            <h2 className="text-2xl font-semibold">Interests</h2>
+            <ul className="text-gray-700 dark:text-gray-300 text-left list-disc pl-5 space-y-2">
+              <li>Data Engineering and Big Data Pipelines</li>
+              <li>Software Architecture and Backend Systems</li>
+              <li>Gesture Recognition in Robotics</li>
+              <li>Mixed Reality (VR/AR) Technology</li>
+              <li>Machine Learning Applications in HCI</li>
+            </ul>
+          </div>
+        </section>
+
+        {/* Projects Grid */}
+        <section className="flex flex-col items-center w-full max-w-6xl" id="projects">
+          <h2 className="text-4xl font-bold mb-4">My Projects</h2>
+          <p className="text-gray-600 dark:text-gray-400 mb-12 text-center max-w-2xl">
+            I love building projects that combine software, data, and real-world problem-solving.
+          </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+            {projects.map((project, index) => (
+              <div
+                key={index}
+                className="border border-gray-300 dark:border-gray-700 p-6 rounded-lg hover:shadow-lg transition text-left"
+              >
+                <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+                <p className="text-gray-500 dark:text-gray-400">{project.description}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Footer */}
+        <footer className="mt-12 text-sm text-gray-500 dark:text-gray-400 text-center">
+          © {new Date().getFullYear()} Chris Hoang. All rights reserved.
+        </footer>
+      </div>
+    </>
   );
 }
