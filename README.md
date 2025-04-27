@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+# Chris Hoang's Portfolio Website
+
+Hi there! 👋  
+Welcome to my cozy corner of the internet.  
+This website is built to showcase my academic projects, technical interests, and creative coding adventures! 🚀✨
+
+---
+
+## What's Inside?
+
+-  **About Me** — A little story about who I am and what I love building.
+- **Academic Projects** — Real-world coding and data projects I've developed at VCU.
+- **Personal Projects** — Creative experiments and engineering challenges I've taken on.
+- **Skills & Interests** — Data engineering, software development, machine learning, and mixed/immersive reality!
+
+---
+
+##  Tech Stack
+
+-  **Next.js** (React Framework)
+-  **TailwindCSS** (For comfy modern styling)
+-  **Vercel** (Hosting magic)
+-  **TypeScript** (Keeping my code strong and happy)
+
+---
+
+## 🏗 How to Run Locally
+
+Clone the repo and install dependencies:
 
 ```bash
+git clone https://github.com/yourusername/your-repo-name.git
+cd your-repo-name
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Then open your browser and head to:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+arduino
+Copy
+Edit
+http://localhost:3000
+and boom, you're home! 🏡
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🎈 Live Site
+You can visit the live version here:
+chrishoang.com ✨
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+(Coming soon... 👀)
 
-## Learn More
+🌸 Fun Facts
+I love blending technology with creativity!
 
-To learn more about Next.js, take a look at the following resources:
+Always learning, always building 🌱
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+If I’m not coding, I’m probably exploring VR worlds or thinking about how to build better ones.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+📨 Connect With Me
+Let's be internet friends! 💬
 
-## Deploy on Vercel
+LinkedIn
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+GitHub
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Medium
+
+Made with lots of ☕ + 💻 + ✨ by Chris Hoang
